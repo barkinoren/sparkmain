@@ -40,29 +40,14 @@ const Index = () => {
     e.preventDefault();
     console.log("Demo request submitted:", formData);
     toast.success("Thank you! We'll be in touch within 24 hours.");
-    setIsSubmitted(true);
+    // Reset form after submission
+    setFormData({
+      email: "",
+      message: "",
+      hearAboutUs: "",
+      newsletter: true,
+    });
   };
-
-  if (isSubmitted) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center px-4">
-        <div className="max-w-lg mx-auto text-center text-white space-y-6">
-          <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto">
-            <img
-              src="/lovable-uploads/6599fa57-966c-4934-8890-aad65967a43f.png"
-              alt="Playable Factory"
-              className="w-8 h-8"
-            />
-          </div>
-          <h1 className="text-3xl font-bold">Thank You!</h1>
-          <p className="text-slate-300 text-lg">
-            We've received your request and will be in touch within 24 hours to
-            schedule your demo.
-          </p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
@@ -70,8 +55,6 @@ const Index = () => {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start max-w-6xl mx-auto">
           {/* Left Column - Hero */}
           <div className="space-y-12 text-white lg:pr-6">
-           
-
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                 Create Playables That Perform
