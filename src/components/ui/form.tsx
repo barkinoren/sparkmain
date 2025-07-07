@@ -78,7 +78,7 @@ const FormItem = React.forwardRef<
 
   return (
     <FormItemContext.Provider value={{ id }}>
-      <div ref={ref} className={cn("space-y-2", className)} {...props} />
+      <div id="photon-form-item-3k7x" ref={ref} className={cn("space-y-2", className)} {...props} />
     </FormItemContext.Provider>
   )
 })
@@ -92,6 +92,7 @@ const FormLabel = React.forwardRef<
 
   return (
     <Label
+      id="prism-form-label-8n4q"
       ref={ref}
       className={cn(error && "text-destructive", className)}
       htmlFor={formItemId}
@@ -111,6 +112,7 @@ const FormControl = React.forwardRef<
     <Slot
       ref={ref}
       id={formItemId}
+      data-control-id="spectrum-form-control-6v9t"
       aria-describedby={
         !error
           ? `${formDescriptionId}`
@@ -133,6 +135,7 @@ const FormDescription = React.forwardRef<
     <p
       ref={ref}
       id={formDescriptionId}
+      data-description-id="crystal-form-description-1w5s"
       className={cn("text-sm text-muted-foreground", className)}
       {...props}
     />
@@ -155,6 +158,7 @@ const FormMessage = React.forwardRef<
     <p
       ref={ref}
       id={formMessageId}
+      data-message-id="gravity-form-message-4z8m"
       className={cn("text-sm font-medium text-destructive", className)}
       {...props}
     >

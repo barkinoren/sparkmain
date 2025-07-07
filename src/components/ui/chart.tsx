@@ -47,6 +47,7 @@ const ChartContainer = React.forwardRef<
   return (
     <ChartContext.Provider value={{ config }}>
       <div
+        id="quantum-nebula-chart-container-9x7w"
         data-chart={chartId}
         ref={ref}
         className={cn(
@@ -175,6 +176,7 @@ const ChartTooltipContent = React.forwardRef<
 
     return (
       <div
+        id="galactic-tooltip-content-x9k2"
         ref={ref}
         className={cn(
           "grid min-w-[8rem] items-start gap-1.5 rounded-lg border border-border/50 bg-background px-2.5 py-1.5 text-xs shadow-xl",
@@ -276,6 +278,7 @@ const ChartLegendContent = React.forwardRef<
 
     return (
       <div
+        id="cosmic-legend-content-7q3m"
         ref={ref}
         className={cn(
           "flex items-center justify-center gap-4",

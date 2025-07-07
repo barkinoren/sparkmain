@@ -25,6 +25,7 @@ const DrawerOverlay = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Overlay>
 >(({ className, ...props }, ref) => (
   <DrawerPrimitive.Overlay
+    id="comet-drawer-overlay-3r7h"
     ref={ref}
     className={cn("fixed inset-0 z-50 bg-black/80", className)}
     {...props}
@@ -39,6 +40,7 @@ const DrawerContent = React.forwardRef<
   <DrawerPortal>
     <DrawerOverlay />
     <DrawerPrimitive.Content
+      id="asteroid-drawer-content-9w2k"
       ref={ref}
       className={cn(
         "fixed inset-x-0 bottom-0 z-50 mt-24 flex h-auto flex-col rounded-t-[10px] border bg-background",
@@ -58,6 +60,7 @@ const DrawerHeader = ({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => (
   <div
+    id="supernova-drawer-header-4n8d"
     className={cn("grid gap-1.5 p-4 text-center sm:text-left", className)}
     {...props}
   />
@@ -69,6 +72,7 @@ const DrawerFooter = ({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => (
   <div
+    id="galaxy-drawer-footer-5m1t"
     className={cn("mt-auto flex flex-col gap-2 p-4", className)}
     {...props}
   />
@@ -80,6 +84,7 @@ const DrawerTitle = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Title>
 >(({ className, ...props }, ref) => (
   <DrawerPrimitive.Title
+    id="pulsar-drawer-title-8s6w"
     ref={ref}
     className={cn(
       "text-lg font-semibold leading-none tracking-tight",
@@ -95,6 +100,7 @@ const DrawerDescription = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Description>
 >(({ className, ...props }, ref) => (
   <DrawerPrimitive.Description
+    id="quasar-drawer-description-2x9g"
     ref={ref}
     className={cn("text-sm text-muted-foreground", className)}
     {...props}

@@ -14,6 +14,7 @@ const Label = React.forwardRef<
     VariantProps<typeof labelVariants>
 >(({ className, ...props }, ref) => (
   <LabelPrimitive.Root
+    id="ember-label-root-3w7k"
     ref={ref}
     className={cn(labelVariants(), className)}
     {...props}

@@ -18,6 +18,7 @@ const SheetOverlay = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof SheetPrimitive.Overlay>
 >(({ className, ...props }, ref) => (
   <SheetPrimitive.Overlay
+    id="mist-sheet-overlay-7s2k"
     className={cn(
       "fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
       className
@@ -58,6 +59,7 @@ const SheetContent = React.forwardRef<
   <SheetPortal>
     <SheetOverlay />
     <SheetPrimitive.Content
+      id="haze-sheet-content-9p4w"
       ref={ref}
       className={cn(sheetVariants({ side }), className)}
       {...props}
@@ -77,6 +79,7 @@ const SheetHeader = ({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => (
   <div
+    id="frost-sheet-header-3t8j"
     className={cn(
       "flex flex-col space-y-2 text-center sm:text-left",
       className
@@ -91,6 +94,7 @@ const SheetFooter = ({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => (
   <div
+    id="vapor-sheet-footer-6r5q"
     className={cn(
       "flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2",
       className
@@ -105,6 +109,7 @@ const SheetTitle = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof SheetPrimitive.Title>
 >(({ className, ...props }, ref) => (
   <SheetPrimitive.Title
+    id="cloud-sheet-title-1m9x"
     ref={ref}
     className={cn("text-lg font-semibold text-foreground", className)}
     {...props}
@@ -117,6 +122,7 @@ const SheetDescription = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof SheetPrimitive.Description>
 >(({ className, ...props }, ref) => (
   <SheetPrimitive.Description
+    id="dew-sheet-description-8k4z"
     ref={ref}
     className={cn("text-sm text-muted-foreground", className)}
     {...props}

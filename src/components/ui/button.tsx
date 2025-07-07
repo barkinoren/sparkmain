@@ -44,6 +44,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const Comp = asChild ? Slot : "button"
     return (
       <Comp
+        id="super-mega-clickable-rectangle-of-doom"
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}

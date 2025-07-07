@@ -50,25 +50,26 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      <div className="container mx-auto px-8 py-12 lg:py-16 max-w-7xl">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start max-w-6xl mx-auto">
+    <div id="main-page" className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <div id="page-container" className="container mx-auto px-8 py-12 lg:py-16 max-w-7xl">
+        <div id="content-grid" className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start max-w-6xl mx-auto">
           {/* Left Column - Hero */}
-          <div className="space-y-12 text-white lg:pr-6">
-            <div className="space-y-6">
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+          <div id="hero-section" className="space-y-12 text-white lg:pr-6">
+            <div id="hero-content" className="space-y-6">
+              <h1 id="main-headline" className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                 Create Playables That Perform
               </h1>
-              <p className="text-2xl lg:text-3xl text-white leading-relaxed">
+              <p id="hero-subtitle" className="text-2xl lg:text-3xl text-white leading-relaxed">
                 Generate stunning, high-impact interactive ads.
               </p>
             </div>
 
-            <div className="space-y-12">
-              <div className="text-lg text-white">
+            <div id="company-logos-section" className="space-y-12">
+              <div id="trusted-by-text" className="text-lg text-white">
                 Trusted by 400+ companies worldwide
               </div>
               <div 
+                id="logos-container"
                 ref={logosRef}
                 className={`space-y-12 transition-all duration-1000 ease-out ${
                   isLogosVisible 
@@ -76,50 +77,56 @@ const Index = () => {
                     : 'opacity-0 transform translate-y-8'
                 }`}
               >
-              <div className={`grid grid-cols-3 gap-6 items-center pt-8 transition-all duration-1000 ease-out ${
+              <div 
+                id="first-logo-row"
+                className={`grid grid-cols-3 gap-6 items-center pt-8 transition-all duration-1000 ease-out ${
                 isLogosVisible 
                   ? 'opacity-100 transform translate-y-0' 
                   : 'opacity-0 transform translate-y-12'
               }`} style={{ transitionDelay: isLogosVisible ? '200ms' : '0ms' }}>
-                <div className="flex items-center justify-center h-12">
+                <div id="mcdonalds-logo-container" className="flex items-center justify-center h-12">
                   <img
+                    id="mcdonalds-logo"
                     src="/lovable-uploads/85635f9e-929a-4117-9ef9-2ce5b1507d88.png"
                     alt="McDonald's"
                     className="h-5 w-auto filter brightness-0 invert"
                   />
                 </div>
-                <div className="flex items-center justify-center h-12">
+                <div id="miniclip-logo-container" className="flex items-center justify-center h-12">
                   <img
+                    id="miniclip-logo"
                     src="/lovable-uploads/miniclip1.png"
                     alt="MiniClip"
                     className="h-5 w-auto filter brightness-0 invert mx-2"
-                    
-
-
                   />
                 </div>
-                <div className="flex items-center justify-center h-12">
+                <div id="rovio-logo-container" className="flex items-center justify-center h-12">
                   <img
+                    id="rovio-logo"
                     src="/lovable-uploads/a78883a7-a800-469e-87a7-95ffa64d1dc4.png"
                     alt="Rovio"
                     className="h-8 w-auto filter brightness-0 invert"
                   />
                 </div>
               </div>
-              <div className={`grid grid-cols-2 gap-1 items-center max-w-xs ml-0 mt-12 transition-all duration-1000 ease-out ${
+              <div 
+                id="second-logo-row"
+                className={`grid grid-cols-2 gap-1 items-center max-w-xs ml-0 mt-12 transition-all duration-1000 ease-out ${
                 isLogosVisible 
                   ? 'opacity-100 transform translate-y-0' 
                   : 'opacity-0 transform translate-y-12'
               }`} style={{ transitionDelay: isLogosVisible ? '400ms' : '0ms' }}>
-                <div className="flex items-center justify-center h-12">
+                <div id="supercell-logo-container" className="flex items-center justify-center h-12">
                   <img
+                    id="supercell-logo"
                     src="/lovable-uploads/087297e8-61a8-4f13-bc9f-790f74bcd530.png"
                     alt="Supercell"
                     className="h-20 w-auto filter brightness-0 invert"
                   />
                 </div>
-                <div className="flex items-center justify-center h-12">
+                <div id="zynga-logo-container" className="flex items-center justify-center h-12">
                   <img
+                    id="zynga-logo"
                     src="/lovable-uploads/70cfa843-1b7b-4764-815f-206f0430617f.png"
                     alt="Zynga"
                     className="h-8 w-auto filter brightness-0 invert"
@@ -131,20 +138,20 @@ const Index = () => {
           </div>
 
           {/* Right Column - Form */}
-          <div className="lg:pl-12">
-            <Card className="shadow-2xl border-0 bg-white">
-              <CardContent className="p-8">
-                <div className="space-y-6">
-                  <div className="text-center space-y-3">
-                    <h2 className="text-2xl font-bold text-gray-900">
+          <div id="form-section" className="lg:pl-12">
+            <Card id="demo-request-card" className="shadow-2xl border-0 bg-white">
+              <CardContent id="card-content" className="p-8">
+                <div id="form-container" className="space-y-6">
+                  <div id="form-header" className="text-center space-y-3">
+                    <h2 id="form-title" className="text-2xl font-bold text-gray-900">
                       Request a Demo
                     </h2>
-                    <p className="text-gray-600 text-base">
+                    <p id="form-subtitle" className="text-gray-600 text-base">
                       Get started with interactive ads today
                     </p>
                   </div>
 
-                  <form onSubmit={handleSubmit} className="space-y-4">
+                  <form id="demo-request-form" onSubmit={handleSubmit} className="space-y-4">
                     <div className="space-y-1.5">
                       <Label
                         htmlFor="email"

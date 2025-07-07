@@ -12,6 +12,7 @@ const Separator = React.forwardRef<
     ref
   ) => (
     <SeparatorPrimitive.Root
+      id="veil-separator-root-4x6n"
       ref={ref}
       decorative={decorative}
       orientation={orientation}

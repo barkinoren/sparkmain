@@ -33,6 +33,7 @@ const Toggle = React.forwardRef<
 >(({ className, variant, size, ...props }, ref) => (
   <TogglePrimitive.Root
     ref={ref}
+    id="horizon-toggle-ctrl-2d9k"
     className={cn(toggleVariants({ variant, size, className }))}
     {...props}
   />

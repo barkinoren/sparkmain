@@ -8,6 +8,7 @@ const ScrollArea = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root>
 >(({ className, children, ...props }, ref) => (
   <ScrollAreaPrimitive.Root
+    id="echo-scroll-area-4n7x"
     ref={ref}
     className={cn("relative overflow-hidden", className)}
     {...props}
@@ -26,6 +27,7 @@ const ScrollBar = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>
 >(({ className, orientation = "vertical", ...props }, ref) => (
   <ScrollAreaPrimitive.ScrollAreaScrollbar
+    id="ripple-scroll-bar-8z5p"
     ref={ref}
     orientation={orientation}
     className={cn(

@@ -6,6 +6,7 @@ import { ButtonProps, buttonVariants } from "@/components/ui/button"
 
 const Pagination = ({ className, ...props }: React.ComponentProps<"nav">) => (
   <nav
+    id="flux-pagination-nav-8r2w"
     role="navigation"
     aria-label="pagination"
     className={cn("mx-auto flex w-full justify-center", className)}
@@ -19,6 +20,7 @@ const PaginationContent = React.forwardRef<
   React.ComponentProps<"ul">
 >(({ className, ...props }, ref) => (
   <ul
+    id="orbit-pagination-content-5v6k"
     ref={ref}
     className={cn("flex flex-row items-center gap-1", className)}
     {...props}
@@ -30,7 +32,7 @@ const PaginationItem = React.forwardRef<
   HTMLLIElement,
   React.ComponentProps<"li">
 >(({ className, ...props }, ref) => (
-  <li ref={ref} className={cn("", className)} {...props} />
+  <li id="cosmos-pagination-item-9q3t" ref={ref} className={cn("", className)} {...props} />
 ))
 PaginationItem.displayName = "PaginationItem"
 
@@ -46,6 +48,7 @@ const PaginationLink = ({
   ...props
 }: PaginationLinkProps) => (
   <a
+    id="stellar-pagination-link-7n4x"
     aria-current={isActive ? "page" : undefined}
     className={cn(
       buttonVariants({
@@ -96,6 +99,7 @@ const PaginationEllipsis = ({
   ...props
 }: React.ComponentProps<"span">) => (
   <span
+    id="astral-pagination-ellipsis-1k8m"
     aria-hidden
     className={cn("flex h-9 w-9 items-center justify-center", className)}
     {...props}

@@ -52,6 +52,7 @@ const Carousel = React.forwardRef<
       plugins,
       className,
       children,
+      id = "ultimate-sliding-content-carousel-of-infinite-possibilities",
       ...props
     },
     ref
